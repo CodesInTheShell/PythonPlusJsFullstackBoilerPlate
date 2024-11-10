@@ -1,0 +1,21 @@
+### RUN below and this will create a directory mounted-data
+# docker compose up
+
+version: "3.8"
+
+services:
+
+  mysql:
+    container_name: mysql
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  # change this for security
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password  # change this for security
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mounted-data:/var/lib/mysql
+    logging:
+      driver: "none"

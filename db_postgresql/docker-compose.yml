@@ -1,0 +1,20 @@
+### RUN below and this will create a directory mounted-data
+# docker compose up
+
+version: "3.8"
+
+services:
+
+  postgres:
+    container_name: postgres
+    image: postgres:15
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password  # change this for security
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./mounted-data:/var/lib/postgresql/data
+    logging:
+      driver: "none"

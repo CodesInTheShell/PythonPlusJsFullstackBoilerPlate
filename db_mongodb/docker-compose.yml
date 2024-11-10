@@ -1,0 +1,17 @@
+### RUN below and this will create a directory mounted-data
+# docker compose up
+
+version: "3.8"
+
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:7.0
+    ports:
+      - "27017:27017"
+    expose:
+      - "27107"
+    volumes:
+      - ./mounted-data:/data/db/ # export 
+    logging:
+      driver: "none"

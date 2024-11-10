@@ -1,0 +1,16 @@
+### RUN below and this will create a directory mounted-data
+# docker compose up
+
+version: "3.8"
+
+services:
+
+  qdrant:
+    container_name: qdrant
+    image: qdrant/qdrant:v1.2.3
+    ports:
+      - "6333:6333"
+    volumes:
+      - ./mounted-data:/qdrant/storage
+    logging:
+      driver: "none"
