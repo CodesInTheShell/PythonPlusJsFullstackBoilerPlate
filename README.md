@@ -35,4 +35,5 @@ This boilerplate includes:
 2. **Flexible Architecture**: Choose your preferred backend and frontend stack, mix-and-match databases, and scale up your code as needed.
 3. **Ready for Prototypes and Production**: Whether you’re building a quick POC or a scalable MVP, this setup has the flexibility and power to support your needs.
 
-## 🛠️ Getting Started
+## 🛠️ Watch it on youtube
+https://youtu.be/oVMTz4xSYkA
