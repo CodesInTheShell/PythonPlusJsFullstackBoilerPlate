@@ -29,8 +29,7 @@ This boilerplate includes:
 2. **Frontend**: Sample projects with React and Vue that you can adapt to fit your specific UI requirements.
 3. **Database Configurations**: Dockerized database configurations for MongoDB, MySQL, PostgreSQL, and Qdrant, allowing you to test with SQL, NoSQL, and vector databases.
 
-## ✨ Watch it on youtube
-https://youtu.be/oVMTz4xSYkA
+## ✨ Key Benefits
 
 1. **Speed Up Development**: Jump right into coding without having to set up the basics. This boilerplate saves you hours of initial setup.
 2. **Flexible Architecture**: Choose your preferred backend and frontend stack, mix-and-match databases, and scale up your code as needed.
